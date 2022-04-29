@@ -1,0 +1,55 @@
+@import "variables.scss";
+.btn-primary{
+    color: #fff;
+    display: inline-flex;
+    font-size: 32px;
+    padding: 1.4rem 5rem;
+    font-family: "Roboto-Bold";
+    background-color: $color_primary;
+    border-color: $color_primary;
+    &:hover, &:active,&.active{
+      color: #fff;
+      border-color: $color_primary;
+      background-color: darken($color_primary, 4);
+    }
+    &:focus{
+      color: #fff;
+      border-color: $color_primary;
+      background-color: darken($color_primary, 4);
+      box-shadow: 0 0 0 0.25rem rgba($color_primary, .5);
+    }
+    .d-icon{
+        margin-left: .3em;
+        margin-right: 0.3em;
+        width: 45px;
+        height: 45px;
+        stroke: #fff;
+    }
+  }
+  .btn-primary.d-lineal{
+    color: $color_primary;
+    background-color: #fff;
+    border:2px solid $color_primary;
+    
+    .d-icon{
+        width: 45px;
+        height: 45px;
+        stroke: $color_primary;
+    }
+    &:hover, &:active,&.active{
+      color: #fff;
+      stroke: #fff;
+      border-color: $color_primary;
+      background-color: darken($color_primary, 4);
+      
+    }
+    &:hover .d-icon{
+      stroke: #fff;
+    }
+    &:focus{
+      color: #fff;
+      border-color: $color_primary;
+      background-color: darken($color_primary, 4);
+      box-shadow: 0 0 0 0.25rem rgba($color_primary, .5);
+    }
+  }

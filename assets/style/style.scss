@@ -1,0 +1,70 @@
+@import "variables.scss";
+@import "reset.scss";
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body{
+  background-color:#F6F6F6;
+  font-family: "Roboto-regular";
+  color:#7F8181;
+  font-size:24px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+}
+main{
+  flex-grow: 2;
+}
+.d-view{
+  width: 1280px;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+.div-1{
+  width: 100%;
+  height: 10px;
+}
+.div-2{
+  width: 100%;
+  height: 20px;
+}
+.div-3{
+  width: 100%;
+  height: 30px;
+}
+.div-4{
+  width: 100%;
+  height: 40px;
+}
+.div-5{
+  width: 100%;
+  height: 50px;
+}
+.div-10{
+  width: 100%;
+  height: 100px;
+}
+.franja{
+  width: 217px;
+  background-color:$color_secondary;
+  border-radius: 0 8px 8px 0;
+}
+ol{
+  font-weight: normal;
+}
+@import "mixin.scss";
+@import "fonts.scss";
+@import "header.scss";
+@import "text.scss";
+@import "cards.scss";
+@import "form.scss";
+@import "btn.scss";

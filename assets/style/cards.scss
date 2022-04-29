@@ -1,0 +1,33 @@
+@import "variables.scss";
+.d-card{
+    border-radius: 12px;
+    background-color:#fff;
+    padding:2em 0;
+    margin:0 .25em;
+    box-shadow: 2px 2px 4px rgba(0,0,0,.25);
+    &.d-guida{
+        background-color:$color_secondary;
+        .d-title{
+            color:#fff;
+        }
+        .d-subtitle{
+            color:#fff;
+        }
+        
+    }
+}
+
+.d-cardBIO{
+    border-radius: 0px;
+    box-shadow: none;
+    width: 100%;
+    border: 1px solid #757A7F;
+    padding: 0;
+    &-header{
+        background-color:#757A7f;
+        color:#fff;
+        text-align: center;
+        padding:.7em;
+        line-height: 1.2;
+    }
+}

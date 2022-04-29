@@ -1,0 +1,27 @@
+.d-title {
+  font-size: 40px;
+  font-family: "Roboto-Bold";
+}
+
+.d-title.d-color {
+  color: #00335E;
+}
+
+.d-title.d-guida {
+  color: #701B40;
+}
+
+.d-subtitle {
+  font-size: 32px;
+  font-family: "Roboto-medium";
+}
+
+.d-text {
+  font-size: 24px;
+  font-family: "Roboto-medium";
+}
+
+.d-text.d-bold {
+  font-family: "Roboto-Bold";
+}
+/*# sourceMappingURL=text.css.map */

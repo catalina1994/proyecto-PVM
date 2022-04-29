@@ -1,0 +1,22 @@
+@import "variables.scss";
+.d-title{
+    font-size:40px;
+    font-family: "Roboto-Bold";
+    &.d-color{
+        color:$color_primary;
+    }
+    &.d-guida{
+        color:$color_secondary;
+    }
+}
+.d-subtitle{
+    font-size:32px;
+    font-family: "Roboto-medium";
+}
+.d-text{
+    font-size:24px;
+    font-family: "Roboto-medium";
+    &.d-bold{
+        font-family: "Roboto-Bold";
+    }
+}
