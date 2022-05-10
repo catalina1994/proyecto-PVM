@@ -1,0 +1,25 @@
+@import "variables.scss";
+.d-table{
+    color: #7F8181;
+    background-color: #fff;
+    border:1px solid #B1B3B3;
+    thead{
+        color:$color-third;
+    }
+    td, th{
+        padding:.7em;
+    }
+}
+
+.d-tableBorder{
+    th{
+        width: 60%;
+        background-color:#EFEFEF;
+        padding: 0.5em 0.7em;
+    }
+    td{
+        background-color:#fff;
+        text-align:center;
+        padding: 0.5em 0.7em;
+    }
+}

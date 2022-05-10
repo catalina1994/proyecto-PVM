@@ -6,11 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="Sistema de Control de Audiencias virtual">
     <title> RENIEC | Plataforma Virtual Multiservicio - PVM</title>
-    <link rel="stylesheet" href="assets/bootstrap-5.0.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/font/css/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/style/helper/all.css">
-    <link rel="stylesheet" href="assets/style/style.css">
-    <script src="assets/bootstrap-5.0.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../assets/bootstrap-5.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/font/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../assets/style/helper/all.css">
+    <link rel="stylesheet" href="../assets/style/style.css">
+    <script src="../assets/bootstrap-5.0.2/js/bootstrap.min.js"></script>
 </head>
 <body>
     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display:none;">
@@ -530,102 +530,51 @@
         </div>
     </header>
     <main class="d-view">
-        <div class="div-5"></div>
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-6">
-                    <img src="/assets/img/icon-huella.svg" alt="" class="m-0 mb-4">
-                    <h2 class="d-title d-color ">Verificación Biométrica:</h2>
-                    <div class="div-2"></div>
-                    <p class="d-subtitle mb-4">Importante</p>
-                    <ol>
-                        <li class="mb-2">Presione su dedo en el huellero biométrico, ubique la señalización luminosa del huellero.</li>
-                        <li class="mb-2">Se validará su identidad biométrica.</li>
-                    </ol>
-                </div>
-                <div class="col-6">
-                    <div class="d-card d-cardBIO mb-4">
-                        <p class="d-cardBIO-header">Presione el DEDO PULGAR DERECHO o PULGAR IZGUIERDO </p>
-                        <div class="d-cardBIO-body" style="height: 500px;">
-                            <img src="/assets/img/huello.png" alt="" data-bs-toggle="modal" data-bs-target="#intentosModal">
-                        </div>
-                    </div>
+            
+            <section class="row" >
+                <div class="col-5">
+                    <div class="div-5"></div>
+            <div class="d-flex mb-4">
+                <div class="franja franja-content">
+                    <img src="/assets/img/icon-dni.svg" alt="" class=" m-0 mb-1" style="width: 99px;">
+                    <h3 class="d-subtitle-bold">Duplicado DNI</h3>
                 </div>
             </div>
+            <div class="div-4"></div>
+                    <h3 class="d-title d-color mb-4">Pago con efectivo:</h3>
+                    <ol>
+                        <li class="mb-2">Ingrese el billete y/o monedas, pago(tasa) del trámite de Duplicado DNI es S/19.</li>
+                        <li class="mb-2">Espere que se procese su pago, luego recoja el ticket.</li>
+                    </ol>
+                </div>
+                <div class="col-7 position-relative">
+                    <div class="div-2"></div>
+                    <img src="/assets/img/img-PVM-efectivo.png" alt="" >
+                    <img src="/assets/img/img-down.png" alt="" class="mb-4">
+                    <p class="text-center"><i>Guiarse de la señal lumisona.</i></p>
+                </div>
+            </section>
         </div>
     </main>
     <footer class="d-view">
         <div class="container-fluid d-flex justify-content-end">
-            <button type="button" class="btn btn-primary d-lineal " data-bs-toggle="modal" data-bs-target="#norespondeModal">
-                CANCELAR 
+            <button type="button" class="btn btn-primary d-lineal me-2">
                 <svg class="d-icon">
-                    <use xlink:href="#close" />
+                    <use xlink:href="#before" />
+                </svg>
+                REGRESAR
+            </button>
+            <button type="button" class="btn btn-primary  me-2" data-bs-toggle="modal" data-bs-target="#dniModal">
+                CONTINUAR 
+                <svg class="d-icon">
+                    <use xlink:href="#after" />
                 </svg>
             </button>
         </div>
         <div class="div-3"></div>
     </footer>
 </body>
-    <div class="modal fade" id="norespondeModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-xl">
-      <div class="modal-content">
-        <!-- <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Combiar Contraseña</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div> -->
-        <div class="modal-body">
-            <div class="div-3"></div>
-            <img src="/assets/img/img-alert.png" alt="">
-           <p class="text-center my-3 mt-5">Autenticación Dactilar <strong>NO CORRESPONDE</strong>, <br> le quedan (02) intentos más.
-           </p>
-        </div>
-        <div class="modal-footer d-flex justify-content-center py-4">
-          <button type="button" class="btn btn-primary d-lineal " data-bs-toggle="modal" data-bs-target="#dniModal">
-            CANCELAR 
-            <svg class="d-icon">
-                <use xlink:href="#close" />
-            </svg>
-        </button>
-        <button type="button" class="btn btn-primary " data-bs-dismiss="modal">
-            <svg class="d-icon">
-                <use xlink:href="#before" />
-            </svg>
-            VOLVER A CAPTURAR
-          </button>
-        </div>
-      </div>
-    </div>
-    </div>
-    <div class="modal fade" id="intentosModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-          <div class="modal-content">
-            <!-- <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Combiar Contraseña</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div> -->
-            <div class="modal-body">
-                <div class="div-3"></div>
-                <img src="/assets/img/img-alert.png" alt="">
-               <p class="text-center my-4">Ah superado el número de <br> intentos de autenticación dactilar, presione <strong>CONTINUAR</strong> <br>
-                 para realizar autenticación Facial.
-               </p>
-            </div>
-            <div class="modal-footer d-flex justify-content-center py-4">
-              <button type="button" class="btn btn-primary d-lineal " data-bs-toggle="modal" data-bs-target="#dniModal">
-                CANCELAR 
-                <svg class="d-icon">
-                    <use xlink:href="#close" />
-                </svg>
-            </button>
-            <button type="button" class="btn btn-primary " data-bs-dismiss="modal">
-                CONTINUAR
-                <svg class="d-icon">
-                    <use xlink:href="#after" />
-                </svg>
-              </button>
-            </div>
-          </div>
-        </div>
-    </div>
-<script src="assets/bootstrap-5.0.2/js/bootstrap.min.js"></script>
+
+<script src="../assets/bootstrap-5.0.2/js/bootstrap.min.js"></script>
 </html>

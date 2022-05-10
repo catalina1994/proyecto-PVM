@@ -15,6 +15,9 @@
         }
         
     }
+    &.d-borde{
+        border-bottom: 15px solid $color_primary;
+    }
 }
 
 .d-cardBIO{
@@ -28,6 +31,56 @@
         color:#fff;
         text-align: center;
         padding:.7em;
+        line-height: 1.2    ;
+    }
+}
+.d-cardITEM{
+    background-color:#B1B3B3;
+    border-radius: 6px;
+    display:flex;
+    width: 390px;
+    margin-bottom: .5em;
+    transition: transform .5s , background-color .6s;
+    &-img{
+        display:flex;
+        align-content: center;
+        margin:.5em 1em;
+        width: 20%;
+    }
+    img{
+        width: 60px;
+    }
+    &-content{
+        color: #fff;
+        padding:0 .5em; 
+        margin:0;
         line-height: 1.2;
+        border-left: 1px solid #fff;
+        display:flex;
+        width: 80%;
+        align-items: center;
+    }
+    &:hover{
+        transform: scale(1.03);  
+        background-color:$color_primary;  }
+}
+.d-cardIcon{
+    border-radius:8px;
+    border: 1px solid $color_primary;
+    display:flex;
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+    &-img{
+        width: 25%;
+        background-color:$color_primary;
+        display: flex;
+        align-items: center;
+    }
+    &-content{
+        width: 75%;
+        padding:1em;
+        background-color:#fff;
+        
     }
 }
