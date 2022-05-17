@@ -1228,7 +1228,7 @@
           </svg>
           REGRESAR
         </button>
-        <button type="button" class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#pagoModal">
+        <button type="button" class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#NopagoModal">
             PAGAR
             <svg class="d-icon">
                 <use xlink:href="#ok" />
@@ -1249,7 +1249,7 @@
             <div class="div-3"></div>
             <img src="/assets/img/img-correct.png" alt="">
            <p class="text-center my-4">
-            Su pago para el trámite de <strong>Rectificación de Estado Civil</strong>, se registro con éxito, retire su <br> tarjeta y recoja su ticket.
+            Su pago para el trámite de <strong>Rectificación de Estado Civil</strong>, se registro con éxito, retire su  tarjeta y recoja su ticket.
            </p>
         </div>
         <div class="modal-footer d-flex justify-content-center py-4">
@@ -1263,6 +1263,32 @@
         </div>
       </div>
     </div>
+</div>
+<div class="modal fade" id="NopagoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <!-- <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Combiar Contraseña</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div> -->
+      <div class="modal-body">
+          <div class="div-3"></div>
+          <img src="/assets/img/img-alert.png" alt="">
+         <p class="text-center my-4">
+          No se pudo procesar su pago. Intente otra vez.
+         </p>
+      </div>
+      <div class="modal-footer d-flex justify-content-center py-4">
+        
+      <button type="button" class="btn btn-primary " data-bs-dismiss="modal">
+          ACEPTAR
+          <svg class="d-icon">
+              <use xlink:href="#ok" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
 </div>
   <script src="../assets/bootstrap-5.0.2/js/bootstrap.min.js"></script>
 </html>
