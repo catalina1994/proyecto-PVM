@@ -6,11 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="Sistema de Control de Audiencias virtual">
     <title> RENIEC | Plataforma Virtual Multiservicio - PVM</title>
-    <link rel="stylesheet" href="assets/bootstrap-5.0.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/font/css/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/style/helper/all.css">
-    <link rel="stylesheet" href="assets/style/style.css">
-    <script src="assets/bootstrap-5.0.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../assets/bootstrap-5.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/font/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../assets/style/helper/all.css">
+    <link rel="stylesheet" href="../assets/style/style.css">
+    <script src="../assets/bootstrap-5.0.2/js/bootstrap.min.js"></script>
 </head>
 <body>
     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display:none;">
@@ -497,6 +497,22 @@
                 <line x1="15.6653" y1="16.1456" x2="31.2269" y2="31.7072"  stroke-width="4" stroke-linecap="round"/>
                 <line x1="14.7727" y1="31.7073" x2="30.3343" y2="16.1457"  stroke-width="4" stroke-linecap="round"/>
         </symbol>
+        <symbol  id="before" width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line x1="15.6821" y1="22.9464" x2="26.9704" y2="13.4744"  stroke-width="4" stroke-linecap="round"/>
+                <line x1="15.6549" y1="23.0943" x2="26.9433" y2="32.5663"  stroke-width="4" stroke-linecap="round"/>
+                <circle cx="23" cy="23" r="19"  stroke-width="4"/>
+        </symbol>
+        <symbol id="after" width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg">
+                <line x1="30.3179" y1="22.0535" x2="19.0296" y2="31.5255" stroke="white" stroke-width="4" stroke-linecap="round"/>
+                <line x1="30.3451" y1="21.9054" x2="19.0567" y2="12.4334" stroke="white" stroke-width="4" stroke-linecap="round"/>
+                <circle cx="23" cy="22" r="19" transform="rotate(-180 23 22)" stroke="white" stroke-width="4"/>
+                
+        </symbol>
+        <symbol id="ok" width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M30.9534 14.4885L21.0144 30.5376" stroke="white" stroke-width="4" stroke-linecap="round"/>
+                <line x1="20.8268" y1="30.9062" x2="12.7931" y2="22.6187" stroke="white" stroke-width="4" stroke-linecap="round"/>
+                <circle cx="23" cy="22" r="19" transform="rotate(-180 23 22)" stroke="white" stroke-width="4"/>
+        </symbol>
     </svg>
     <header class="py-4 d-view">
         <div class="container-fluid">
@@ -515,37 +531,50 @@
     </header>
     <main class="d-view">
         <div class="container-fluid">
-            <div class="text-center mb-4">
-                <div class="div-3"></div>
-                <h3 class="d-subtitle">Seleccione un servicio:</h3>
-                <div class="div-3"></div>
-            </div>
-            <div class="d-flex justify-content-center">
-                <a href="" class="d-card " style="width: 480px;">
-                        <img src="/assets/img/icon-actas.svg" alt="" class="mb-3">
-                        <h2 class="d-title mb-4 d-color text-center mb-1" >Copia Certificada <br> de Actas</h2>
-                </a>
-                <a href="tramites.html" class="d-card d-guida " style="width: 480px;">
-                        <img src="/assets/img/icon-tramites.svg" alt="" class="mb-3">
-                        <h2 class="d-title mb-4 d-color text-center mb-1" >Trámites DNI </h2>
-                </a>
+            <div class="div-5"></div>
+            <div class="d-flex mb-4">
+                <div class="franja franja-content d-color">
+                    <img src="/assets/img/icon-actaNacimiento-w.svg" alt="" class=" m-0 mb-1" style="width: 99px;">
+                    <h3 class="d-subtitle-bold">Nacimiento</h3>
+                </div>
+                <div class=" mb-4 ms-5">
+                    <div class="div-4"></div>
+                    <h3 class="d-title d-color mb-4">Medios de Pago</h3>
+                    <ol>
+                        <li class="mb-4">
+                            Selecione un medio de Pago (Tarjeta o Efectivo) o el pago previo realizado, Pago (tasa) de Trámite de Copia Certificada de Actas S/. 12.
+                        </li>
+                        <li>
+                            Si usted realizó un pago previo (pagalo.pe) y no se visualiza, ingrese en otro momento, de lo contrario puede selecionar pagar con Tarjeta o Efectivo y continuar su trámite en estos momentos.
+                        </li>
+                    </ol>
+                </div>
             </div>
             <div class="div-3"></div>
+            <section class="d-flex justify-content-center" >
+                <div class="d-card d-borde text-center px-5" style="width: 310px;">
+                    <img src="/assets/img/icon-tarjeta.svg" alt="">
+                    <p class="d-subtitle-bold d-color d-bold mt-3">Tarjeta</p>
+                </div>
+                <div class="d-card d-borde text-center px-5" style="width: 310px;">
+                    <img src="/assets/img/icon-efectivo.svg" alt="">
+                    <p class="d-subtitle-bold d-color d-bold mt-3">Efectivo</p>
+                </div>
+            </section>
         </div>
     </main>
     <footer class="d-view">
         <div class="container-fluid d-flex justify-content-end">
             <button type="button" class="btn btn-primary d-lineal me-2">
-                SALIR 
                 <svg class="d-icon">
-                    <use xlink:href="#close" />
+                    <use xlink:href="#before" />
                 </svg>
-                </button>
-                
+                REGRESAR
+            </button>
         </div>
-        <div class="div-2"></div>
+        <div class="div-3"></div>
     </footer>
 </body>
- 
-<script src="assets/bootstrap-5.0.2/js/bootstrap.min.js"></script>
+
+<script src="../assets/bootstrap-5.0.2/js/bootstrap.min.js"></script>
 </html>

@@ -115,6 +115,10 @@ a {
   color: #fff;
 }
 
+.franja.d-color {
+  background-color: #00335E;
+}
+
 ol {
   font-weight: normal;
 }
@@ -348,7 +352,7 @@ ol {
   font-size: 32px;
 }
 
-.form-control-lg {
+.form-control-lg, .form-select {
   padding: 1.2rem 1.5rem;
   font-size: 2.3rem;
   border-radius: 0.3rem;
