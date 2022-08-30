@@ -539,6 +539,8 @@
                     <div class="div-2"></div>
                     <p class="d-subtitle mb-4">Importante</p>
                     <ol>
+                        <li class="mb-2">Antes de presionar, limpie su dedo antes de colocar en el lector
+                            biométrico.</li>
                         <li class="mb-2">Presione su dedo en el huellero biométrico, ubique la señalización luminosa del huellero.</li>
                         <li class="mb-2">Se validará su identidad biométrica.</li>
                     </ol>
@@ -566,6 +568,33 @@
         <div class="div-3"></div>
     </footer>
 </body>
+    <div class="modal fade" id="mejoresHuellasModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <!-- <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Combiar Contraseña</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div> -->
+            <div class="modal-body p-5">
+                <div class="div-3"></div>
+                <p class="text-center my-4 p-2">Estimado, ciudado segun el sistema de mejores huellas le recomienda usar:</p>
+                <div class="div-1"></div>
+                <h2 class="d-title text-center mb-3 my-4">Pulgar Derecho o Pulgar Izquierdo</h2>
+                <div class="div-1"></div>
+               <p class="text-center my-4 p-2">para una mayor probabilidad de conincidencia
+               </p>
+            </div>
+            <div class="modal-footer d-flex justify-content-center py-4">
+            <button type="button" class="btn btn-primary " data-bs-dismiss="modal">
+                ENTENDIDO
+                <svg class="d-icon">
+                    <use xlink:href="#ok" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+    </div>
     <div class="modal fade" id="norespondeModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-xl">
       <div class="modal-content">
@@ -627,5 +656,37 @@
           </div>
         </div>
     </div>
+    <div class="modal fade" id="verificacionOkModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <!-- <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Combiar Contraseña</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div> -->
+            <div class="modal-body p-3">
+                <div class="div-3"></div>
+                <img src="/assets/img/img-correct.png" alt="">
+                <p class="text-center my-4 p-2">Verificación Biometria <strong> Aprobada</strong></p>
+               <p class="text-center">Bienvenido,
+               </p>
+               <h2 class="d-title text-center"> JUAN MARCOS</h2>
+            </div>
+            <div class="modal-footer d-flex justify-content-center py-4">
+            <button type="button" class="btn btn-primary " data-bs-dismiss="modal">
+                ACEPTAR
+                <svg class="d-icon">
+                    <use xlink:href="#ok" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+    </div>
 <script src="assets/bootstrap-5.0.2/js/bootstrap.min.js"></script>
+<script>
+    var myModal = new bootstrap.Modal(document.getElementById('mejoresHuellasModal'), {
+        keyboard: false
+        })
+    myModal.show()
+</script>
 </html>
