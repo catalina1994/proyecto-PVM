@@ -532,127 +532,52 @@
     <main class="d-view">
         <div class="div-5"></div>
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-6">
-                    <img src="/assets/img/icon-facial.svg" alt="" class="m-0 mb-4">
-                    <h2 class="d-title d-color ">Verificación Biométrica <br> Facial:</h2>
-                    <div class="div-2"></div>
-                    <p class="d-subtitle-bold mb-4">Importante</p>
-                    <ol>
-                        <li class="mb-3">Ubique su rostro en frente de la cámara, ubique la señalización luminosa de la cámara .</li>
-                        <li class="mb-3">Una vez ubicada la imagen en el centro de la pantalla, la captura será automática.</li>
-                    </ol>
-                </div>
-                <div class="col-6">
-                    <div class="d-card d-cardBIO mb-4">
-                        <p class="d-cardBIO-header">Imagen FACIAL </p>
-                        <div class="d-cardBIO-body" style="height: 500px;">
-                            <img src="/assets/img/facial.png" alt="" data-bs-toggle="modal" data-bs-target="#rostroNoModal">
-                        </div>
+            <div class="row justify-content-center">
+                <div class="col-9">
+                    <h3 class="text-center d-title d-guida">Confirmación del trámite </h3>
+                    <p class="text-center mt-5 ">
+                        Estimado(a) <strong>JUAN MARCOS</strong>
+                    </p>
+                    <p class="text-center">Antes de continuar, confirme los datos ingresados son correctos
+                    </p>
+                    <div class="d-card p-5">
+                        <h4 class="d-text d-bold d-color mb-1">Oficina de recojo seleccionada</h4>
+                        <h4 class="d-text  mb-0">Local de Entrega:</h4>
+                        <p class="d-subtitle mb-2">OR MIRAFLORES</p>
+                        <h4 class="d-text  mb-0">Dirección de Entrega:</h4>
+                        <p class="d-subtitle mb-4">Av. Ernesto Diez Canseco Nº230</p>
+                        <h4 class="d-text d-bold d-color mb-0">Datos de contacto</h4>
+                        <p class="d-subtitle mb-4">959784614</p>
+                        <h4 class="d-text d-bold d-color mb-0">Donación de Órganos</h4>
+                        <p class="d-subtitle mb-4">NO</p>
+                        
                     </div>
                 </div>
+                
             </div>
+            <div class="div-5"></div>
         </div>
     </main>
     <footer class="d-view">
         <div class="container-fluid d-flex justify-content-end">
-            <button type="button" class="btn btn-primary d-lineal " data-bs-toggle="modal" data-bs-target="#norespondeModal">
-                CANCELAR 
+            <button type="button" class="btn btn-primary d-lineal me-3" >
+                REGRESAR
                 <svg class="d-icon">
-                    <use xlink:href="#close" />
+                    <use xlink:href="#before" />
                 </svg>
             </button>
+            <button type="button" class="btn btn-primary " >
+                CONFIRMAR
+                <svg class="d-icon">
+                    <use xlink:href="#ok" />
+                </svg>
+            </button>
+            
         </div>
         <div class="div-3"></div>
     </footer>
 </body>
-    <div class="modal fade" id="rostroNoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <!-- <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Combiar Contraseña</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div> -->
-        <div class="modal-body">
-            <div class="div-3"></div>
-            <img src="/assets/img/img-alert.png" alt="">
-           <p class="text-center my-3 mt-5 d-subtitle">Rostro no ubicado, ¿Desea más tiempo?
-           </p>
-        </div>
-        <div class="modal-footer d-flex justify-content-center pb-4 mb-3">
-          <button type="button" class="btn btn-primary d-lineal " >
-            CANCELAR 
-            <svg class="d-icon">
-                <use xlink:href="#close" />
-            </svg>
-        </button>
-        <button type="button" class="btn btn-primary " data-bs-dismiss="modal">
-            ACEPTAR
-            <svg class="d-icon">
-                <use xlink:href="#ok" />
-            </svg>
-            
-          </button>
-        </div>
-      </div>
-    </div>
-    </div>
-    <div class="modal fade" id="norespondeModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-xl">
-          <div class="modal-content">
-            <!-- <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Combiar Contraseña</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div> -->
-            <div class="modal-body">
-                <div class="div-3"></div>
-                <img src="/assets/img/img-alert.png" alt="">
-               <p class="text-center my-4 d-subtitle">Autenticación Dactilar <strong>NO CORRESPONDE</strong>, <br> le quedan (02) intentos más.
-               </p>
-            </div>
-            <div class="modal-footer d-flex justify-content-center py-4">
-              <button type="button" class="btn btn-primary d-lineal " data-bs-toggle="modal" data-bs-target="#dniModal">
-                CANCELAR 
-                <svg class="d-icon">
-                    <use xlink:href="#close" />
-                </svg>
-            </button>
-            <button type="button" class="btn btn-primary " data-bs-dismiss="modal">
-                <svg class="d-icon">
-                    <use xlink:href="#before" />
-                </svg>
-                VOLVER A CAPTURAR
-              </button>
-            </div>
-          </div>
-        </div>
-    </div>
-    <div class="modal fade" id="verificacionOkModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-          <div class="modal-content">
-            <!-- <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Combiar Contraseña</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div> -->
-            <div class="modal-body p-3">
-                <div class="div-3"></div>
-                <img src="/assets/img/img-correct.png" alt="">
-                <p class="text-center my-4 p-2">Verificación Biometria <strong> Aprobada</strong></p>
-               <p class="text-center">Bienvenido,
-               </p>
-               <h2 class="d-title text-center"> JUAN MARCOS</h2>
-            </div>
-            <div class="modal-footer d-flex justify-content-center py-4">
-            <button type="button" class="btn btn-primary " data-bs-dismiss="modal">
-                ACEPTAR
-                <svg class="d-icon">
-                    <use xlink:href="#ok" />
-                </svg>
-              </button>
-            </div>
-          </div>
-        </div>
-    </div>
+
 
 <script src="assets/bootstrap-5.0.2/js/bootstrap.min.js"></script>
 </html>

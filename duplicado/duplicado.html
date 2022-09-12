@@ -558,7 +558,7 @@
                 </svg>
                 REGRESAR
             </button>
-            <button type="button" class="btn btn-primary  me-2" data-bs-toggle="modal" data-bs-target="#dniModal">
+            <button type="button" class="btn btn-primary  me-2" data-bs-toggle="modal" data-bs-target="#dniConfirmacionModal">
                 CONTINUAR 
                 <svg class="d-icon">
                     <use xlink:href="#after" />
@@ -569,7 +569,7 @@
     </footer>
 </body>
     <div class="modal fade" id="dniModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <!-- <div class="modal-header">
           <h5 class="modal-title" id="exampleModalLabel">Combiar Contraseña</h5>
@@ -580,6 +580,7 @@
             <img src="/assets/img/img-alert.png" alt="">
            <p class="text-center my-4">DNI no validó para el <br> trámite de <strong>Duplicado de DNI.</strong>
            </p>
+           <p class="text-center my-4">Puede acérquese a una oficina RENIEC</p>
         </div>
         <div class="modal-footer d-flex justify-content-center py-4">
           <button type="button" class="btn btn-primary " data-bs-dismiss="modal">ACEPTAR
@@ -591,5 +592,35 @@
       </div>
     </div>
     </div>
+    <div class="modal fade" id="dniConfirmacionModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog ">
+          <div class="modal-content">
+            <!-- <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Combiar Contraseña</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div> -->
+            <div class="modal-body">
+                <div class="div-3"></div>
+               <h3 class="d-title text-center">Confirmación</h3>
+               <p class="text-center my-4">Usted a ingresado el siguiente DNI, ¿Es correcto?
+               </p>
+               <h3 class="d-title text-center my-4">857384623</h3>
+             
+            </div>
+            <div class="modal-footer d-flex justify-content-center py-4">
+              <button type="button" class="btn btn-primary  d-lineal" >NO
+                <svg class="d-icon">
+                    <use xlink:href="#close" />
+                </svg>
+              </button>
+              <button type="button" class="btn btn-primary " data-bs-dismiss="modal">SI
+                <svg class="d-icon">
+                    <use xlink:href="#ok" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        </div>
 <script src="../assets/bootstrap-5.0.2/js/bootstrap.min.js"></script>
 </html>

@@ -17,7 +17,6 @@ body{
   display: flex;
   flex-direction: column;
   height: 100%;
-
 }
 main{
   flex-grow: 2;
@@ -80,4 +79,5 @@ ol{
 @import "cards.scss";
 @import "table.scss";
 @import "form.scss";
+//mas
 @import "btn.scss";

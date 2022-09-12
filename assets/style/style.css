@@ -251,8 +251,9 @@ ol {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 390px;
+  width: 290px;
   margin-bottom: .5em;
+  padding: 0.7em 0;
   -webkit-transition: background-color .6s , -webkit-transform .5s;
   transition: background-color .6s , -webkit-transform .5s;
   transition: transform .5s , background-color .6s;
@@ -265,20 +266,18 @@ ol {
   display: flex;
   -ms-flex-line-pack: center;
       align-content: center;
-  margin: .5em 1em;
+  margin-left: .3em;
   width: 20%;
 }
 
 .d-cardITEM img {
-  width: 60px;
+  width: 35px;
 }
 
 .d-cardITEM-content {
   color: #fff;
-  padding: 0 .5em;
   margin: 0;
   line-height: 1.2;
-  border-left: 1px solid #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
