@@ -540,13 +540,14 @@
                 <div class=" mb-4">
                     <div class="div-5"></div>
                     <h3 class="d-title d-guida mb-4">Agencia de Recojo:</h3>
-                    <p>Marcos Cama Diaz, confirme la  agencia RENIEC selecionada.</p>
+                    <p>Estimado(a) <strong>JUAN MARCOS</strong></p>
+                    <p>Seleccionar la opción “Seleccionar Oficina Reniec por ubicación geográfica”, el cual muestra las Oficinas RENIEC.</p>
                 </div>
             </div>
             <div class="div-5"></div>
             <section >
-                <h3 class="text-center d-subtitle-bold mb-5 d-color d-bold">Oficina  en PIURA:</h3>
-                <article class="d-cardIcon">
+                <h3 class="text-center d-subtitle-bold mb-5 d-color d-bold">Oficina de entrega en LIMA/LIMA</h3>
+                <article class="d-cardIcon  mb-4">
                     <div class="d-cardIcon-img">
                         <img src="/assets/img/icon-agencia.svg" alt="" style="width: 100px;">
                     </div>
@@ -564,18 +565,7 @@
                             <div class="col-7">
                                 <p>Libertad 568, Piura 20001</p>
                             </div>
-                            <div class="col-5">
-                                <p><strong>Telf:</strong></p>
-                            </div>
-                            <div class="col-7">
-                                <p>073 - 313 436</p>
-                            </div>
-                            <div class="col-5">
-                                <p><strong>Fax:</strong></p>
-                            </div>
-                            <div class="col-7">
-                                <p>073 - 313 436</p>
-                            </div>
+                           
                         </div>
                     </div>
                 </article>
@@ -590,7 +580,7 @@
                 </svg>
                 REGRESAR
             </button>
-            <button type="button" class="btn btn-primary  me-2" data-bs-toggle="modal" data-bs-target="#dniModal">
+            <button type="button" class="btn btn-primary  me-2" data-bs-toggle="modal" data-bs-target="#celularModal">
                 CONFIRMAR 
                 <svg class="d-icon">
                     <use xlink:href="#ok" />
@@ -600,6 +590,38 @@
         <div class="div-3"></div>
     </footer>
 </body>
-
+<div class="modal fade" id="celularModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <!-- <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Combiar Contraseña</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div> -->
+        <div class="modal-body">
+            <div class="div-3"></div>
+            <img src="/assets/img/img-celular.png" alt="" class="mb-4">
+            <div class="row justify-content-center">
+                <div class="col-8">
+                    <div class="mb-3">
+                        <label for="dni" class="form-label">Ingrese el Nº DNI del Titular :</label>
+                        <input type="text" class="form-control form-control-lg" id="dni" placeholder="Ingresar" required>
+                        <div class="invalid-feedback">
+                            *DNI no válido
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer d-flex justify-content-center py-4">
+          <button type="button" class="btn btn-primary ">
+            ACEPTAR 
+            <svg class="d-icon">
+                <use xlink:href="#ok" />
+            </svg>
+        </button>
+        </div>
+      </div>
+    </div>
+</div>
 <script src="../assets/bootstrap-5.0.2/js/bootstrap.min.js"></script>
 </html>

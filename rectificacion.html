@@ -514,6 +514,7 @@
                 <circle cx="23" cy="22" r="19" transform="rotate(-180 23 22)" stroke="white" stroke-width="4"/>
         </symbol>
     </svg>
+
     <header class="py-4 d-view">
         <div class="container-fluid">
             <div class="row">
@@ -578,18 +579,74 @@
         <div class="modal-body">
             <div class="div-3"></div>
             <img src="/assets/img/img-alert.png" alt="">
-           <p class="text-center my-4">DNI no validó para el <br> trámite de <strong>Rectificación de Estado Civil</strong>
+           <p class="text-center my-4">DNI no validó para el <br> trámite de <strong>Rectificación de Estado Civil</strong>. 
+            Puede acérquese a una oficina RENIEC
            </p>
         </div>
         <div class="modal-footer d-flex justify-content-center py-4">
-          <button type="button" class="btn btn-primary " data-bs-dismiss="modal">ACEPTAR
+          <button type="button" class="btn btn-primary d-lineal" data-bs-dismiss="modal">SALIR
             <svg class="d-icon">
-                <use xlink:href="#ok" />
+                <use xlink:href="#close" />
             </svg>
           </button>
         </div>
       </div>
     </div>
     </div>
+    <div class="modal fade" id="dniConfirmacionModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog ">
+          <div class="modal-content">
+            <!-- <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Combiar Contraseña</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div> -->
+            <div class="modal-body">
+                <div class="div-3"></div>
+               <h3 class="d-title text-center">Confirmación</h3>
+               <p class="text-center my-4">Usted a ingresado el siguiente DNI, ¿Es correcto?
+               </p>
+               <h3 class="d-title text-center my-4">857384623</h3>
+             
+            </div>
+            <div class="modal-footer d-flex justify-content-center py-4">
+              <button type="button" class="btn btn-primary  d-lineal" >NO
+                <svg class="d-icon">
+                    <use xlink:href="#close" />
+                </svg>
+              </button>
+              <button type="button" class="btn btn-primary " data-bs-dismiss="modal">SI
+                <svg class="d-icon">
+                    <use xlink:href="#ok" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        </div>
+     <div class="modal fade" id="actaModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <!-- <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Combiar Contraseña</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div> -->
+                <div class="modal-body">
+                    <div class="div-3"></div>
+                    <img src="/assets/img/img-alert.png" alt="">
+                   <p class="text-center my-4">
+                    El acta de matrimonio <strong>no esta incorporada en los RRCC de RENIEC</strong>.
+                    Puede acérquese a una oficina RENIEC
+                   </p>
+                </div>
+                <div class="modal-footer d-flex justify-content-center py-4">
+                  <button type="button" class="btn btn-primary d-lineal" data-bs-dismiss="modal">SALIR
+                    <svg class="d-icon">
+                        <use xlink:href="#close" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+     </div>   
 <script src="assets/bootstrap-5.0.2/js/bootstrap.min.js"></script>
 </html>
