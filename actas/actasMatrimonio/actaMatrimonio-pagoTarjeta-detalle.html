@@ -14,12 +14,12 @@
     <title>RENIEC | Plataforma Virtual Multiservicio - PVM</title>
     <link
       rel="stylesheet"
-      href="../assets/bootstrap-5.0.2/css/bootstrap.min.css"
+      href="../../assets/bootstrap-5.0.2/css/bootstrap.min.css"
     />
-    <link rel="stylesheet" href="../assets/font/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="../assets/style/helper/all.css" />
-    <link rel="stylesheet" href="../assets/style/style.css" />
-    <script src="../assets/bootstrap-5.0.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../../assets/font/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../../assets/style/helper/all.css" />
+    <link rel="stylesheet" href="../../assets/style/style.css" />
+    <script src="../../assets/bootstrap-5.0.2/js/bootstrap.min.js"></script>
   </head>
   <body>
     <svg
@@ -1207,7 +1207,7 @@
             </ol>
           </div>
           <div class="col-6 ">
-            <div class="d-card p-5">
+            <div class="d-card p-5 mb-4">
                 <h4 class="d-text d-bold d-color mb-0">Número de orden</h4>
                 <p class="d-subtitle mb-4">00000000000000058</p>
                 <h4 class="d-text d-bold d-color mb-0">Doc. Titular</h4>
@@ -1268,6 +1268,31 @@
         </div>
       </div>
     </div>
+</div>
+<div class="modal fade" id="NOpagoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <!-- <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Combiar Contraseña</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div> -->
+      <div class="modal-body px-5">
+          <div class="div-3"></div>
+          <img src="/assets/img/img-alert.png" alt="">
+         <p class="text-center my-4">
+          Su pago para el Copia Certificada , NO se registró con éxito. Ingresar el inconveniente, presionando REGISTRAR
+         </p>
+      </div>
+      <div class="modal-footer d-flex justify-content-center py-4">
+      <button type="button" class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#NOpagoModal">
+          REGISTRAR
+          <svg class="d-icon">
+              <use xlink:href="#ok" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
 </div>
   <script src="../assets/bootstrap-5.0.2/js/bootstrap.min.js"></script>
 </html>

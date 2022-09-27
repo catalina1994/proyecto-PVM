@@ -6,11 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="Sistema de Control de Audiencias virtual">
     <title> RENIEC | Plataforma Virtual Multiservicio - PVM</title>
-    <link rel="stylesheet" href="assets/bootstrap-5.0.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/font/css/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/style/helper/all.css">
-    <link rel="stylesheet" href="assets/style/style.css">
-    <script src="assets/bootstrap-5.0.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../assets/bootstrap-5.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/font/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../assets/style/helper/all.css">
+    <link rel="stylesheet" href="../assets/style/style.css">
+    <script src="../assets/bootstrap-5.0.2/js/bootstrap.min.js"></script>
 </head>
 <body>
     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display:none;">
@@ -548,8 +548,8 @@
                                     *Teléfono no válido
                             </div>
                             </div>
-                            <p class="d-subtitle">Motivo</p>
-                            <div>
+                            <!-- <p class="d-subtitle">Motivo</p> -->
+                            <!-- <div>
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
                                     <label class="form-check-label d-subtitle" for="inlineCheckbox1">Acta mal impresa</label>
@@ -558,7 +558,16 @@
                                     <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
                                     <label class="form-check-label d-subtitle" for="inlineCheckbox2">No imprimo acta</label>
                                   </div>
-                            </div>
+                            </div> -->
+                            <div class="mb-3">
+                                <label for="motivo" class="form-label">Motivo</label>
+                                <select class="form-select" aria-label="Default select example">
+                                  <option selected>Seleccionar</option>
+                                  <option value="1">Acta mal impresa</option>
+                                  <option value="2">No imprimio acta</option>
+                                  <option value="3">No se efectuo el pago</option>
+                                </select>
+                              </div>
                         </div>
                     </div>
                 </div>
