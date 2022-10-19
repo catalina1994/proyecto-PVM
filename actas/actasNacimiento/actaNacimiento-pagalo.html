@@ -566,7 +566,7 @@
                     <tbody>
                       <tr>
                         <th scope="row">
-                            <img src="/assets/img/img-pagalo.png" alt="" class="m-0">
+                            <img src="/assets/img/logobcp.png" alt="" class="m-0">
                         </th>
                         <td>
                         <a href="">Ver datos</a>
@@ -582,10 +582,10 @@
                       </tr>
                       <tr>
                         <th scope="row">
-                            <img src="/assets/img/img-pagalo.png" alt="" class="m-0">
+                            <img src="/assets/img/logobn.png" alt="" class="m-0">
                         </th>
                         <td>
-                        <a href="">Ver datos</a>
+                        <a href="" data-bs-toggle="modal" data-bs-target="#pagoDetalleModal" >Ver datos</a>
                         </td>
                         <td>12/01/2018</td>
                         <td>12</td>
@@ -619,6 +619,53 @@
         <div class="div-3"></div>
     </footer>
 </body>
+<div class="modal fade" id="pagoDetalleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <!-- <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Combiar Contraseña</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div> -->
+        <div class="modal-body">
+            <div class="div-3"></div>
+            <h4 class="d-title d-color mb-5 mt-2 px-3 text-center">Ver datos del recibo</h4>
+            <table class="table table-bordered d-tableBorder" style="margin: 0 auto; width: 80%">
+                <thead>
+                  <tr>
+                    <th scope="col">Código  de Agencia</th>
+                    <td scope="col">0987</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Nro. de Recibo</th>
+                    <td>
+                        039043
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Código de Cajero</th>
+                    <td>9191</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Código de Tributo</th>
+                    <td colspan="2">00523</td>
+                  </tr>
+                </tbody>
+              </table>
+           
+        </div>
+        <div class="modal-footer d-flex justify-content-center py-4">
+          <button type="button" class="btn btn-primary " data-bs-dismiss="modal" >
+            ACEPTAR 
+            <svg class="d-icon">
+                <use xlink:href="#ok" />
+            </svg>
+        </button>
+        </div>
+      </div>
+    </div>
+</div>
 <div class="modal fade" id="pagoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
