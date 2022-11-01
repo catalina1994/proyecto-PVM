@@ -14,6 +14,7 @@
 }
 .d-subtitle{
     font-size:32px;
+    line-height: 1.15;
     &-bold{
         font-size:32px;
         font-family: "Roboto-medium";
@@ -21,8 +22,11 @@
 }
 .d-text{
     font-size:28px;
-    font-family: "Roboto-medium";
+    // font-family: "Roboto-medium";
 }
 .d-bold{
     font-family: "Roboto-Bold";
+}
+.d-medium{
+    font-family: "Roboto-Medium";
 }

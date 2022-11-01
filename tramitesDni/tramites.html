@@ -492,23 +492,23 @@
                                 </g>
                             </g>
         </symbol>
-        <symbol id="close" width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <symbol id="close" width="40" height="40" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="23" cy="23" r="19"  stroke-width="4"/>
                 <line x1="15.6653" y1="16.1456" x2="31.2269" y2="31.7072"  stroke-width="4" stroke-linecap="round"/>
                 <line x1="14.7727" y1="31.7073" x2="30.3343" y2="16.1457"  stroke-width="4" stroke-linecap="round"/>
         </symbol>
-        <symbol  id="before" width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <symbol  id="before" width="40" height="40" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <line x1="15.6821" y1="22.9464" x2="26.9704" y2="13.4744"  stroke-width="4" stroke-linecap="round"/>
                 <line x1="15.6549" y1="23.0943" x2="26.9433" y2="32.5663"  stroke-width="4" stroke-linecap="round"/>
                 <circle cx="23" cy="23" r="19"  stroke-width="4"/>
         </symbol>
-        <symbol id="after" width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg">
+        <symbol id="after" width="40" height="40" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg">
                 <line x1="30.3179" y1="22.0535" x2="19.0296" y2="31.5255" stroke="white" stroke-width="4" stroke-linecap="round"/>
                 <line x1="30.3451" y1="21.9054" x2="19.0567" y2="12.4334" stroke="white" stroke-width="4" stroke-linecap="round"/>
                 <circle cx="23" cy="22" r="19" transform="rotate(-180 23 22)" stroke="white" stroke-width="4"/>
                 
         </symbol>
-        <symbol id="ok" width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <symbol id="ok" width="40" height="40" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M30.9534 14.4885L21.0144 30.5376" stroke="white" stroke-width="4" stroke-linecap="round"/>
                 <line x1="20.8268" y1="30.9062" x2="12.7931" y2="22.6187" stroke="white" stroke-width="4" stroke-linecap="round"/>
                 <circle cx="23" cy="22" r="19" transform="rotate(-180 23 22)" stroke="white" stroke-width="4"/>
@@ -517,14 +517,15 @@
     <header class="py-4 d-view">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-sm-6">
+                <div class="col-sm-7 d-flex align-items-center">
                     <svg class="d-logo">
                         <use xlink:href="#logo" />
                     </svg>
+                    <p class="d-text d-bold mb-0 ms-3">Plataforma Virtual Multiservicio</p>
                 </div>
-                <div class="col-sm-6 d-header-caption">
-                    <p>Bienvenidos,</p>
-                    <p class="d-text d-bold">Plataforma Virtual Multiservicio</p>
+                <div class="col-sm-5 d-header-caption">
+                    
+                    
                 </div>
             </div>
         </div>
@@ -536,14 +537,14 @@
                 <h3 class="d-subtitle">Seleccione un <strong>Trámite de DNI:</strong></h3>
                 <div class="div-1"></div>
             </div>
-            <div class="d-flex ">
-                <a href="" class="d-card d-guida" style="width: 360px;" data-bs-toggle="modal" data-bs-target="#notiDuplicadoModal">
-                        <img src="/assets/img/icon-dni.svg" alt="" class="mb-3">
-                        <h2 class="d-subtitle mb-4 d-color text-center mb-1" >Duplicado DNI</h2>
+            <div class="">
+                <a href="" class="d-flex align-items-center d-card d-guida p-3 px-5 mb-3" style="width: 600px;" >
+                        <img src="/assets/img/icon-dni.svg" alt="" class="mx-0">
+                        <h2 class="d-subtitle d-color ms-4" >Duplicado DNI</h2>
                 </a>
-                <a href="" class="d-card d-guida " style="width: 360px;" data-bs-toggle="modal" data-bs-target="#notiRectificacionModal">
-                        <img src="/assets/img/icon-civil.svg" alt="" class="mb-3">
-                        <h2 class="d-subtitle mb-4 d-color text-center mb-1" >Rectificación de <br> Estado Civil </h2>
+                <a href="" class="d-flex align-items-center d-card d-guida p-3 px-5 " style="width: 600px;" >
+                        <img src="/assets/img/icon-civil.svg" alt="" class="mx-0">
+                        <h2 class="d-subtitle  d-color ms-4" >Rectificación de <br> Estado Civil </h2>
                 </a>
             </div>
             <div class="div-3"></div>
@@ -569,31 +570,7 @@
         <div class="div-2"></div>
     </footer>
 </body>
-    <div class="modal fade" id="notiDuplicadoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-              <!-- <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Combiar Contraseña</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div> -->
-              <div class="modal-body px-5">
-                  <div class="div-3"></div>
-                  <img src="/assets/img/img-notificacion.png" alt="">
-                 <p class="text-center my-4">
-                    Todo el trámite en la plataforma es personal (no interviene un tercero)
-                 </p>
-              </div>
-              <div class="modal-footer d-flex justify-content-center py-4">
-                <button type="button" class="btn btn-primary " data-bs-dismiss="modal">
-                  ENTENDIDO
-                  <svg class="d-icon">
-                      <use xlink:href="#ok" />
-                  </svg>
-                </button>
-              </div>
-            </div>
-          </div>
-    </div>
+    
     <!--<div class="modal fade" id="notiRectificacionModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">

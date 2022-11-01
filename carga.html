@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../assets/font/css/font-awesome.min.css">
     <link rel="stylesheet" href="../assets/style/helper/all.css">
     <link rel="stylesheet" href="../assets/style/style.css">
-    <script src="assets/bootstrap-5.0.2/js/bootstrap.min.js"></script>
+    <script src="../assets/bootstrap-5.0.2/js/bootstrap.min.js"></script>
 </head>
 <body>
     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display:none;">
@@ -517,57 +517,46 @@
     <header class="py-4 d-view">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-sm-6">
+                <div class="col-sm-7 d-flex align-items-center">
                     <svg class="d-logo">
                         <use xlink:href="#logo" />
                     </svg>
+                    <p class="d-text d-bold mb-0 ms-3">Plataforma Virtual Multiservicio</p>
                 </div>
-                <div class="col-sm-6 d-header-caption">
-                    <p>Bienvenidos,</p>
-                    <p class="d-text d-bold">Plataforma Virtual Multiservicio</p>
+                <div class="col-sm-5 d-header-caption">
+                    <button type="button" class="btn btn-primary d-lineal" style="font-size: 24px;
+                    background-color: transparent;
+                    padding: 0.5em 1.5em;">
+                        Registrar Incidencias
+                        
+                    </button>
                 </div>
             </div>
         </div>
     </header>
     <main class="d-view">
-        <div class="div-5"></div>
+        <div class="div-10"></div>
+        <div class="div-10"></div>
+        <div class="div-10"></div>
         <div class="container-fluid">
-            <div class="row">
+            <div class="row justify-content-center">
                 <div class="col-7">
-                    <div class="div-5"></div>
-                    <h2 class="d-title d-color ">Recomendaciones:</h2>
-                    <div class="div-3"></div>
-                    <ol  class="d-subtitle ms-4">
-                        <li class="mb-4">No usar prendas en la cabeza.</li>
-                        <li class="mb-4">No usar anteojos.</li>
-                        <li class="mb-4">Mirar defrente  a la cámara y no sonría.</li>
-                    </ol>
+                    <img src="/assets/img/img-load.png" alt="cargando" style="width: 130px;">
+                    <p class="text-center mt-5 d-subtitle">
+                        Validando la autentificación dactilar, puede tomar unos minutos.
                 </div>
-                <div class="col-5">
-                    <div class="div-5"></div>
-                    <img src="/assets/img/img-user-ok.png" alt="" class="m-0">
-                    <p><i>Guiarse de la imagen mostrada.</i></p>
-                </div>
+                
             </div>
+            <div class="div-5"></div>
+            
         </div>
     </main>
     <footer class="d-view">
-        <div class="container-fluid d-flex justify-content-end">
-            <button type="button" class="btn btn-primary d-lineal me-2 disabled" disabled>
-                CANCELAR 
-                <svg class="d-icon">
-                    <use xlink:href="#close" />
-                </svg>
-            </button>
-            <button type="button" class="btn btn-primary " disabled>
-                ACEPTAR 
-                <svg class="d-icon">
-                    <use xlink:href="#ok" />
-                </svg>
-            </button>
-        </div>
+        
         <div class="div-3"></div>
     </footer>
 </body>
+
+
 <script src="assets/bootstrap-5.0.2/js/bootstrap.min.js"></script>
 </html>

@@ -492,23 +492,23 @@
                                 </g>
                             </g>
         </symbol>
-        <symbol id="close" width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <symbol id="close" width="40" height="40" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="23" cy="23" r="19"  stroke-width="4"/>
                 <line x1="15.6653" y1="16.1456" x2="31.2269" y2="31.7072"  stroke-width="4" stroke-linecap="round"/>
                 <line x1="14.7727" y1="31.7073" x2="30.3343" y2="16.1457"  stroke-width="4" stroke-linecap="round"/>
         </symbol>
-        <symbol  id="before" width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <symbol  id="before" width="40" height="40" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <line x1="15.6821" y1="22.9464" x2="26.9704" y2="13.4744"  stroke-width="4" stroke-linecap="round"/>
                 <line x1="15.6549" y1="23.0943" x2="26.9433" y2="32.5663"  stroke-width="4" stroke-linecap="round"/>
                 <circle cx="23" cy="23" r="19"  stroke-width="4"/>
         </symbol>
-        <symbol id="after" width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg">
+        <symbol id="after" width="40" height="40" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg">
                 <line x1="30.3179" y1="22.0535" x2="19.0296" y2="31.5255" stroke="white" stroke-width="4" stroke-linecap="round"/>
                 <line x1="30.3451" y1="21.9054" x2="19.0567" y2="12.4334" stroke="white" stroke-width="4" stroke-linecap="round"/>
                 <circle cx="23" cy="22" r="19" transform="rotate(-180 23 22)" stroke="white" stroke-width="4"/>
                 
         </symbol>
-        <symbol id="ok" width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <symbol id="ok" width="40" height="40" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M30.9534 14.4885L21.0144 30.5376" stroke="white" stroke-width="4" stroke-linecap="round"/>
                 <line x1="20.8268" y1="30.9062" x2="12.7931" y2="22.6187" stroke="white" stroke-width="4" stroke-linecap="round"/>
                 <circle cx="23" cy="22" r="19" transform="rotate(-180 23 22)" stroke="white" stroke-width="4"/>
@@ -517,14 +517,19 @@
     <header class="py-4 d-view">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-sm-6">
+                <div class="col-sm-7 d-flex align-items-center">
                     <svg class="d-logo">
                         <use xlink:href="#logo" />
                     </svg>
+                    <p class="d-text d-bold mb-0 ms-3">Plataforma Virtual Multiservicio</p>
                 </div>
-                <div class="col-sm-6 d-header-caption">
-                    <p>Bienvenidos,</p>
-                    <p class="d-text d-bold">Plataforma Virtual Multiservicio</p>
+                <div class="col-sm-5 d-header-caption">
+                    <button type="button" class="btn btn-primary d-lineal" style="font-size: 24px;
+                    background-color: transparent;
+                    padding: 0.5em 1.5em;">
+                        Registrar Incidencias
+                        
+                    </button>
                 </div>
             </div>
         </div>
@@ -532,25 +537,14 @@
     <main class="d-view">
         <div class="div-5"></div>
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-6">
-                    <img src="/assets/img/icon-huella.svg" alt="" class="m-0 mb-4">
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-7 text-center">
+                    <img src="/assets/img/icon-huella.svg" alt="" class="m-auto mb-5">
                     <h2 class="d-title d-color ">Verificación Biométrica:</h2>
-                    <div class="div-2"></div>
-                    <p class="d-subtitle mb-4">Importante</p>
-                    <ol>
-                        <li class="mb-2">Antes de presionar, limpie su dedo antes de colocar en el lector
-                            biométrico.</li>
-                        <li class="mb-2">Presione su dedo en el huellero biométrico, ubique la señalización luminosa del huellero.</li>
-                        <li class="mb-2">Se validará su identidad biométrica.</li>
-                    </ol>
-                </div>
-                <div class="col-6">
-                    <div class="d-card d-cardBIO mb-4">
-                        <p class="d-cardBIO-header">Presione el DEDO PULGAR DERECHO o PULGAR IZGUIERDO </p>
-                        <div class="d-cardBIO-body" style="height: 500px;">
-                            <img src="/assets/img/huello.png" alt="" data-bs-toggle="modal" data-bs-target="#intentosModal">
-                        </div>
+                    <p class="text-center my-4 p-2">
+                        Estimado, ciudado segun el <strong>Sistema de Mejores Huellas</strong> para una mayor probabilidad de conincidencia, le recomienda usar:</p>
+                    <div class="card">
+                        <h2 class="d-title text-center p-5">Pulgar Derecho o Pulgar Izquierdo</h2>
                     </div>
                 </div>
             </div>
@@ -558,10 +552,16 @@
     </main>
     <footer class="d-view">
         <div class="container-fluid d-flex justify-content-end">
-            <button type="button" class="btn btn-primary d-lineal " data-bs-toggle="modal" data-bs-target="#norespondeModal">
+            <button type="button" class="btn btn-primary d-lineal ">
                 CANCELAR 
                 <svg class="d-icon">
                     <use xlink:href="#close" />
+                </svg>
+            </button>
+            <button type="button" class="btn btn-primary ms-2" data-bs-toggle="modal" data-bs-target="#mejoresHuellasModal">
+                AUTENTIFICAR
+                <svg class="d-icon">
+                    <use xlink:href="#ok" />
                 </svg>
             </button>
         </div>
@@ -576,13 +576,14 @@
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div> -->
             <div class="modal-body p-5">
-                <div class="div-3"></div>
-                <p class="text-center my-4 p-2">Estimado, ciudado segun el sistema de mejores huellas le recomienda usar:</p>
-                <div class="div-1"></div>
-                <h2 class="d-title text-center mb-3 my-4">Pulgar Derecho o Pulgar Izquierdo</h2>
-                <div class="div-1"></div>
-               <p class="text-center my-4 p-2">para una mayor probabilidad de conincidencia
-               </p>
+                <h3 class="d-title d-color text-center mb-4">Verificación Biométrica  <br> Dactilar</h3>
+                <p class="d-subtitle  d-bold mb-4 mx-5">Importante</p>
+                    <ol class="mx-5">
+                        <li class="mb-2">Antes de presionar, limpie su dedo antes de colocar en el lector
+                            biométrico.</li>
+                        <li class="mb-2">Presione su dedo en el huellero biométrico, ubique la señalización luminosa del huellero.</li>
+                        <li class="mb-2">Se validará su identidad biométrica.</li>
+                    </ol>
             </div>
             <div class="modal-footer d-flex justify-content-center py-4">
             <button type="button" class="btn btn-primary " data-bs-dismiss="modal">
@@ -595,98 +596,5 @@
           </div>
         </div>
     </div>
-    <div class="modal fade" id="norespondeModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-xl">
-      <div class="modal-content">
-        <!-- <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Combiar Contraseña</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div> -->
-        <div class="modal-body">
-            <div class="div-3"></div>
-            <img src="/assets/img/img-alert.png" alt="">
-           <p class="text-center my-3 mt-5">Autenticación Dactilar <strong>NO CORRESPONDE</strong>, <br> le quedan (02) intentos más.
-           </p>
-        </div>
-        <div class="modal-footer d-flex justify-content-center py-4">
-          <button type="button" class="btn btn-primary d-lineal " data-bs-toggle="modal" data-bs-target="#dniModal">
-            CANCELAR 
-            <svg class="d-icon">
-                <use xlink:href="#close" />
-            </svg>
-        </button>
-        <button type="button" class="btn btn-primary " data-bs-dismiss="modal">
-            <svg class="d-icon">
-                <use xlink:href="#before" />
-            </svg>
-            VOLVER A CAPTURAR
-          </button>
-        </div>
-      </div>
-    </div>
-    </div>
-    <div class="modal fade" id="intentosModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-          <div class="modal-content">
-            <!-- <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Combiar Contraseña</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div> -->
-            <div class="modal-body">
-                <div class="div-3"></div>
-                <img src="/assets/img/img-alert.png" alt="">
-               <p class="text-center my-4">Ah superado el número de <br> intentos de autenticación dactilar, presione <strong>CONTINUAR</strong> <br>
-                 para realizar autenticación Facial.
-               </p>
-            </div>
-            <div class="modal-footer d-flex justify-content-center py-4">
-              <button type="button" class="btn btn-primary d-lineal " data-bs-toggle="modal" data-bs-target="#dniModal">
-                CANCELAR 
-                <svg class="d-icon">
-                    <use xlink:href="#close" />
-                </svg>
-            </button>
-            <button type="button" class="btn btn-primary " data-bs-dismiss="modal">
-                CONTINUAR
-                <svg class="d-icon">
-                    <use xlink:href="#after" />
-                </svg>
-              </button>
-            </div>
-          </div>
-        </div>
-    </div>
-    <div class="modal fade" id="verificacionOkModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-          <div class="modal-content">
-            <!-- <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Combiar Contraseña</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div> -->
-            <div class="modal-body p-3">
-                <div class="div-3"></div>
-                <img src="/assets/img/img-correct.png" alt="">
-                <p class="text-center my-4 p-2">Verificación Biometria <strong> Aprobada</strong></p>
-               <p class="text-center">Bienvenido,
-               </p>
-               <h2 class="d-title text-center"> JUAN MARCOS</h2>
-            </div>
-            <div class="modal-footer d-flex justify-content-center py-4">
-            <button type="button" class="btn btn-primary " data-bs-dismiss="modal">
-                ACEPTAR
-                <svg class="d-icon">
-                    <use xlink:href="#ok" />
-                </svg>
-              </button>
-            </div>
-          </div>
-        </div>
-    </div>
 <script src="assets/bootstrap-5.0.2/js/bootstrap.min.js"></script>
-<script>
-    var myModal = new bootstrap.Modal(document.getElementById('mejoresHuellasModal'), {
-        keyboard: false
-        })
-    myModal.show()
-</script>
 </html>

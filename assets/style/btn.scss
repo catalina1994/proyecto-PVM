@@ -2,11 +2,12 @@
 .btn-primary{
     color: #fff;
     display: inline-flex;
-    font-size: 32px;
-    padding: 1.4rem 4rem;
+    font-size: 28px;
+    padding: 1.2rem 2.5rem;
     font-family: "Roboto-Bold";
     background-color: $color_primary;
     border-color: $color_primary;
+    border-radius:8px;
     &:disabled, &.disabled{
       color: #fff;
       background-color: #D7D8D8;
@@ -26,8 +27,8 @@
     .d-icon{
         margin-left: .3em;
         margin-right: 0.3em;
-        width: 45px;
-        height: 45px;
+        width: 40px;
+        height: 40px;
         stroke: #fff;
     }
   }
@@ -37,8 +38,8 @@
     border:2px solid $color_primary;
     
     .d-icon{
-        width: 45px;
-        height: 45px;
+        width: 40px;
+        height: 40px;
         stroke: $color_primary;
     }
     &:hover, &:active,&.active{
