@@ -6,11 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="Sistema de Control de Audiencias virtual">
     <title> RENIEC | Plataforma Virtual Multiservicio - PVM</title>
-    <link rel="stylesheet" href="../../assets/bootstrap-5.0.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../../assets/font/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../../assets/style/helper/all.css">
-    <link rel="stylesheet" href="../../assets/style/style.css">
-    <script src="../../assets/bootstrap-5.0.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../assets/bootstrap-5.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/font/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../assets/style/helper/all.css">
+    <link rel="stylesheet" href="../assets/style/style.css">
+    <script src="../assets/bootstrap-5.0.2/js/bootstrap.min.js"></script>
 </head>
 <body>
     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display:none;">
@@ -513,6 +513,9 @@
                 <line x1="20.8268" y1="30.9062" x2="12.7931" y2="22.6187" stroke="white" stroke-width="4" stroke-linecap="round"/>
                 <circle cx="23" cy="22" r="19" transform="rotate(-180 23 22)" stroke="white" stroke-width="4"/>
         </symbol>
+        <symbol id="edit" width="27" height="27" viewBox="0 0 27 27" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18.474 5.60677L22.3889 9.5217C22.5538 9.68663 22.5538 9.95573 22.3889 10.1207L12.9097 19.5998L8.88194 20.0469C8.34375 20.1076 7.88802 19.6519 7.94878 19.1137L8.39583 15.0859L17.875 5.60677C18.0399 5.44184 18.309 5.44184 18.474 5.60677ZM25.5052 4.61285L23.3872 2.49479C22.7274 1.83507 21.6554 1.83507 20.9913 2.49479L19.4549 4.03125C19.2899 4.19618 19.2899 4.46528 19.4549 4.63021L23.3698 8.54514C23.5347 8.71007 23.8038 8.71007 23.9687 8.54514L25.5052 7.00868C26.1649 6.34462 26.1649 5.27257 25.5052 4.61285V4.61285ZM17.6667 17.0217V21.4401H3.77778V7.55122H13.7517C13.8906 7.55122 14.0208 7.49479 14.1207 7.39931L15.8568 5.66319C16.1866 5.33333 15.9523 4.77344 15.4878 4.77344H3.08333C1.93316 4.77344 1 5.7066 1 6.85677V22.1345C1 23.2847 1.93316 24.2179 3.08333 24.2179H18.3611C19.5113 24.2179 20.4444 23.2847 20.4444 22.1345V15.2856C20.4444 14.8212 19.8845 14.5911 19.5547 14.9167L17.8186 16.6528C17.7231 16.7526 17.6667 16.8828 17.6667 17.0217Z" />
+        </symbol>
     </svg>
     <header class="py-4 d-view">
         <div class="container-fluid">
@@ -524,122 +527,45 @@
                     <p class="d-text d-bold mb-0 ms-3">Plataforma Virtual Multiservicio</p>
                 </div>
                 <div class="col-sm-5 d-header-caption">
-                    <button type="button" class="btn btn-primary d-lineal" style="font-size: 24px;
-                    background-color: transparent;
-                    padding: 0.5em 1.5em;">
-                        Registrar Incidencias
-                        
+                    <button type="button" class="btn btn-primary align-items-center" >
+                        <span>Registrar Incidencias</span>
+                        <svg style="width:27px; height:27px;" class="ms-2">
+                            <use xlink:href="#edit" />
+                        </svg>
                     </button>
                 </div>
             </div>
         </div>
     </header>
     <main class="d-view">
+        <div class="div-10"></div>
+        <div class="div-5"></div>
         <div class="container-fluid">
-            <section class="row" >
-                <div class="col-5">
-                    <div class="div-5"></div>
-            <div class="d-flex mb-4">
-                <div class="franja d-color franja-content">
-                <img
-                  src="/assets/img/icon-civil.svg"
-                  alt=""
-                  class="m-0 mb-2"
-                  style="width: 99px"
-                />
-                <h3 class="d-subtitle-bold">Matrimonio</h3>
-              </div>
+            <div class="row justify-content-center">
+                <div class="col-7">
+                    <img src="/assets/img/img-correct.png" alt="">
+                    <p class="text-center my-5 d-subtitle">
+                        Ya puede realizar la impresión de su <strong>Copia Certificada</strong>.
+                    </p>
+                </div>
             </div>
-            <div class="div-4"></div>
-                    <h3 class="d-title d-color mb-2">Pago con efectivo:</h3>
-                    <p class="mb-4">Estimado(a) <strong>JUAN MARCOS</strong></p>
-                    <ol>
-                        <li class="mb-2">
-                            Ingrese el billete y/o monedas, pago(tasa)  del trámite de Copia de Actas Certificadas es S/12.
-                        </li>
-                        <li class="mb-2">Espere que se procese su pago, luego recoja el ticket.</li>
-                    </ol>
-                </div>
-                <div class="col-7 justify-content-end">
-                    <div class="div-5"></div>
-                    <table class="table table-bordered d-tableBorder" style="margin: 0 auto; width: 80%">
-                        <thead>
-                          <tr>
-                            <th scope="col">Billetes</th>
-                            <td scope="col">10</td>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <th scope="row">Monedas</th>
-                            <td>2</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">Monto ingresado</th>
-                            <td>12</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">Costo de servicio</th>
-                            <td colspan="2">12</td>
-                          </tr>
-                          <tr class="d-color d-bold">
-                            <th scope="row">Monto devolver</th>
-                            <td colspan="2">0</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                </div>
-            </section>
+            <div class="div-5"></div>
+            <div class="container-fluid d-flex justify-content-center">
+                <button type="button" class="btn btn-primary ms-3" >
+                    IMPRIMIR ACTA
+                    <svg class="d-icon ">
+                        <use xlink:href="#ok" />
+                    </svg>
+                </button>
+            </div>
         </div>
     </main>
     <footer class="d-view">
-        <div class="container-fluid d-flex justify-content-end">
-            <button type="button" class="btn btn-primary d-lineal me-2">
-                <svg class="d-icon">
-                    <use xlink:href="#before" />
-                </svg>
-                REGRESAR
-            </button>
-            <button type="button" class="btn btn-primary  me-2" data-bs-toggle="modal" data-bs-target="#pagoModal">
-                CONTINUAR 
-                <svg class="d-icon">
-                    <use xlink:href="#after" />
-                </svg>
-            </button>
-        </div>
+        
         <div class="div-3"></div>
     </footer>
 </body>
-<div class="modal fade" id="pagoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <!-- <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Combiar Contraseña</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div> -->
-        <div class="modal-body px-5">
-            <div class="div-3"></div>
-            <img src="/assets/img/img-alert-01.png" alt="">
-           <p class="text-center my-4">
-            Se <strong>devolverá</strong> los billetes y/o monedas, ingresadas.
-Escoja otro medio de pago.
-        </div>
-        <div class="modal-footer d-flex justify-content-center py-4">
-            <button type="button" class="btn btn-primary  d-lineal " data-bs-dismiss="modal">
-                CANCELAR
-                <svg class="d-icon">
-                    <use xlink:href="#close" />
-                </svg>
-              </button> 
-        <button type="button" class="btn btn-primary " data-bs-dismiss="modal">
-            ACEPTAR
-            <svg class="d-icon">
-                <use xlink:href="#ok" />
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div>
-</div>
-<script src="../assets/bootstrap-5.0.2/js/bootstrap.min.js"></script>
+
+
+<script src="assets/bootstrap-5.0.2/js/bootstrap.min.js"></script>
 </html>

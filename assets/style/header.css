@@ -10,4 +10,19 @@
 .d-header-caption p {
   margin: 0;
 }
+
+.d-header-caption .btn-primary {
+  font-size: 24px;
+  background-color: transparent;
+  color: #00335E;
+  padding: 0.5em 1.5em;
+}
+
+.d-header-caption .btn-primary svg {
+  fill: #00335E;
+}
+
+.d-header-caption .btn-primary:hover svg {
+  fill: #fff;
+}
 /*# sourceMappingURL=header.css.map */

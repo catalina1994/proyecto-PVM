@@ -7,4 +7,16 @@
     p{
         margin:0;
     }
+    .btn-primary{
+        svg{
+           fill: #00335E; 
+        }
+        font-size: 24px;
+        background-color: transparent;
+        color: #00335E;
+        padding: 0.5em 1.5em;
+        &:hover svg{
+            fill: #fff;
+        }
+    }
 }
