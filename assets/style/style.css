@@ -247,6 +247,18 @@ ol {
   border-bottom: 15px solid #00335E;
 }
 
+.d-card.disabled, .d-card:disabled {
+  border-bottom: 15px solid #99adbf;
+}
+
+.d-card.disabled img, .d-card:disabled img {
+  opacity: 0.4;
+}
+
+.d-card.disabled .d-color, .d-card:disabled .d-color {
+  color: #99adbf;
+}
+
 .d-cardBIO {
   border-radius: 0px;
   -webkit-box-shadow: none;

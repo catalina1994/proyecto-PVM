@@ -18,6 +18,16 @@
     &.d-borde{
         border-bottom: 15px solid $color_primary;
     }
+    &.disabled{
+        border-bottom: 15px solid #99adbf;
+        img{
+            opacity: 0.4;
+        }
+        .d-color{
+            color: #99adbf;
+        }
+    }
+    
 }
 
 .d-cardBIO{
