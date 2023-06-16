@@ -3,13 +3,11 @@
   background-color: #fff;
   border: 1px solid #B1B3B3;
 }
-
 .d-table thead {
   color: #EA5932;
 }
-
 .d-table td, .d-table th {
-  padding: .7em;
+  padding: 0.7em;
 }
 
 .d-tableBorder th {
@@ -17,10 +15,8 @@
   background-color: #EFEFEF;
   padding: 0.5em 0.7em;
 }
-
 .d-tableBorder td {
   background-color: #fff;
   text-align: center;
   padding: 0.5em 0.7em;
-}
-/*# sourceMappingURL=table.css.map */
+}/*# sourceMappingURL=table.css.map */

@@ -2,129 +2,94 @@
   border-radius: 12px;
   background-color: #fff;
   padding: 2em 0;
-  margin: 0 .25em;
-  -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
-          box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+  margin: 0 0.25em;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
 }
-
 .d-card.d-guida {
   background-color: #701B40;
 }
-
 .d-card.d-guida .d-title {
   color: #fff;
 }
-
 .d-card.d-guida .d-subtitle {
   color: #fff;
 }
-
 .d-card.d-borde {
   border-bottom: 15px solid #00335E;
 }
-
 .d-card.disabled {
   border-bottom: 15px solid #99adbf;
 }
-
 .d-card.disabled img {
   opacity: 0.4;
 }
-
 .d-card.disabled .d-color {
   color: #99adbf;
 }
 
 .d-cardBIO {
   border-radius: 0px;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   width: 100%;
   border: 1px solid #757A7F;
   padding: 0;
 }
-
 .d-cardBIO-header {
   background-color: #757A7f;
   color: #fff;
   text-align: center;
-  padding: .7em;
+  padding: 0.7em;
   line-height: 1.2;
 }
 
 .d-cardITEM {
   background-color: #B1B3B3;
   border-radius: 6px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 290px;
-  margin-bottom: .5em;
+  margin-bottom: 0.5em;
   padding: 0.7em 0;
-  -webkit-transition: background-color .6s , -webkit-transform .5s;
-  transition: background-color .6s , -webkit-transform .5s;
-  transition: transform .5s , background-color .6s;
-  transition: transform .5s , background-color .6s , -webkit-transform .5s;
+  margin-right: 18px;
+  transition: transform 0.5s, background-color 0.6s;
 }
-
 .d-cardITEM-img {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  margin-left: .3em;
+  align-content: center;
+  margin-left: 0.3em;
   width: 20%;
 }
-
 .d-cardITEM img {
   width: 35px;
 }
-
 .d-cardITEM-content {
   color: #fff;
   margin: 0;
   line-height: 1.2;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 80%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 .d-cardITEM:hover {
-  -webkit-transform: scale(1.03);
-          transform: scale(1.03);
+  transform: scale(1.03);
   background-color: #00335E;
 }
 
 .d-cardIcon {
   border-radius: 8px;
   border: 1px solid #00335E;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 80%;
   margin: 0 auto;
   overflow: hidden;
 }
-
 .d-cardIcon-img {
   width: 25%;
   background-color: #00335E;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 .d-cardIcon-content {
   width: 75%;
   padding: 1em;
   background-color: #fff;
-}
-/*# sourceMappingURL=cards.css.map */
+}/*# sourceMappingURL=cards.css.map */

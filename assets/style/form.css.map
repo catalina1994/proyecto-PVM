@@ -1,9 +1,1 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,WAAW,CAAA;EACP,SAAS,EAAC,IAAI;CAEjB;;AACD,AAAA,gBAAgB,EAAE,YAAY,CAAA;EAC1B,OAAO,EAAE,aAAa;EACtB,SAAS,EAAE,MAAM;EACjB,aAAa,EAAE,MAAM;CACxB",
-    "sources": [
-        "form.scss"
-    ],
-    "names": [],
-    "file": "form.css"
-}
+{"version":3,"sources":["form.scss","form.css"],"names":[],"mappings":"AAAA;EACI,eAAA;ACCJ;;ADEA;EACI,sBAAA;EACA,iBAAA;EACA,qBAAA;ACCJ","file":"form.css"}

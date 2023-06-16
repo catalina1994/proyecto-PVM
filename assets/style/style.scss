@@ -16,18 +16,22 @@ body{
   line-height: 1.3;
   display: flex;
   flex-direction: column;
-  height: 100%;
+  //height: 100%;
+  height: 1024px;
 }
 main{
   flex-grow: 2;
 }
 .d-view{
-  width: 1240px;
+  width: 1280px;
   margin: 0 auto;
 }
 a {
   text-decoration: none;
   cursor: pointer;
+}
+p{
+  line-height: 1;
 }
 .div-1{
   width: 100%;

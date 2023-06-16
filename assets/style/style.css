@@ -3,7 +3,6 @@ html {
   font-size: 14px;
   color: #666868;
 }
-
 @media screen and (min-width: 600px) {
   html html {
     font-size: 16px;
@@ -33,7 +32,6 @@ code {
 *, *::before, *::after {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -43,30 +41,27 @@ body {
   color: #7F8181;
   font-size: 28px;
   line-height: 1.3;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  height: 100%;
+  flex-direction: column;
+  height: 1024px;
 }
 
 main {
-  -webkit-box-flex: 2;
-      -ms-flex-positive: 2;
-          flex-grow: 2;
+  flex-grow: 2;
 }
 
 .d-view {
-  width: 1240px;
+  width: 1280px;
   margin: 0 auto;
 }
 
 a {
   text-decoration: none;
   cursor: pointer;
+}
+
+p {
+  line-height: 1;
 }
 
 .div-1 {
@@ -104,17 +99,14 @@ a {
   background-color: #701B40;
   border-radius: 0 8px 8px 0;
 }
-
 .franja.franja-content {
   width: 20%;
   min-width: 270px;
   padding: 1em;
 }
-
 .franja.franja-content .d-subtitle-bold {
   color: #fff;
 }
-
 .franja.d-color {
   background-color: #00335E;
 }
@@ -125,20 +117,16 @@ ol {
 
 @font-face {
   font-family: "Roboto-Light";
-  src: url("../font/roboto/Roboto-Light.woff") format("woff"), url("../font/roboto/Roboto-Light.woff2") format("woff2");
-  /* Modern Browsers */
+  src: url("../font/roboto/Roboto-Light.woff") format("woff"), url("../font/roboto/Roboto-Light.woff2") format("woff2"); /* Modern Browsers */
   font-weight: lighter;
   font-style: normal;
 }
-
 @font-face {
   font-family: "Roboto-Bold";
-  src: url("../font/roboto/Roboto-Bold.woff") format("woff"), url("../font/roboto/Roboto-Bold.woff2") format("woff2");
-  /* Modern Browsers */
+  src: url("../font/roboto/Roboto-Bold.woff") format("woff"), url("../font/roboto/Roboto-Bold.woff2") format("woff2"); /* Modern Browsers */
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: "Roboto-medium";
   src: url("../font/roboto/Roboto-Medium.woff");
@@ -146,7 +134,6 @@ ol {
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: "Roboto-regular";
   src: url("../font/roboto/Roboto-Regular.woff");
@@ -154,7 +141,6 @@ ol {
   font-weight: normal;
   font-style: normal;
 }
-
 .d-logo {
   width: 185px;
   height: 71.5px;
@@ -163,22 +149,18 @@ ol {
 .d-header-caption {
   text-align: right;
 }
-
 .d-header-caption p {
   margin: 0;
 }
-
 .d-header-caption .btn-primary {
   font-size: 24px;
   background-color: transparent;
   color: #00335E;
   padding: 0.5em 1.5em;
 }
-
 .d-header-caption .btn-primary svg {
   fill: #00335E;
 }
-
 .d-header-caption .btn-primary:hover svg {
   fill: #fff;
 }
@@ -204,7 +186,6 @@ ol {
   font-size: 32px;
   line-height: 1.15;
 }
-
 .d-subtitle-bold {
   font-size: 32px;
   font-family: "Roboto-medium";
@@ -226,126 +207,92 @@ ol {
   border-radius: 12px;
   background-color: #fff;
   padding: 2em 0;
-  margin: 0 .25em;
-  -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
-          box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+  margin: 0 0.25em;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
 }
-
 .d-card.d-guida {
   background-color: #701B40;
 }
-
 .d-card.d-guida .d-title {
   color: #fff;
 }
-
 .d-card.d-guida .d-subtitle {
   color: #fff;
 }
-
 .d-card.d-borde {
   border-bottom: 15px solid #00335E;
 }
-
-.d-card.disabled, .d-card:disabled {
+.d-card.disabled {
   border-bottom: 15px solid #99adbf;
 }
-
-.d-card.disabled img, .d-card:disabled img {
+.d-card.disabled img {
   opacity: 0.4;
 }
-
-.d-card.disabled .d-color, .d-card:disabled .d-color {
+.d-card.disabled .d-color {
   color: #99adbf;
 }
 
 .d-cardBIO {
   border-radius: 0px;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   width: 100%;
   border: 1px solid #757A7F;
   padding: 0;
 }
-
 .d-cardBIO-header {
   background-color: #757A7f;
   color: #fff;
   text-align: center;
-  padding: .7em;
+  padding: 0.7em;
   line-height: 1.2;
 }
 
 .d-cardITEM {
   background-color: #B1B3B3;
   border-radius: 6px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 290px;
-  margin-bottom: .5em;
+  margin-bottom: 0.5em;
   padding: 0.7em 0;
-  -webkit-transition: background-color .6s , -webkit-transform .5s;
-  transition: background-color .6s , -webkit-transform .5s;
-  transition: transform .5s , background-color .6s;
-  transition: transform .5s , background-color .6s , -webkit-transform .5s;
+  margin-right: 18px;
+  transition: transform 0.5s, background-color 0.6s;
 }
-
 .d-cardITEM-img {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  margin-left: .3em;
+  align-content: center;
+  margin-left: 0.3em;
   width: 20%;
 }
-
 .d-cardITEM img {
   width: 35px;
 }
-
 .d-cardITEM-content {
   color: #fff;
   margin: 0;
   line-height: 1.2;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 80%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 .d-cardITEM:hover {
-  -webkit-transform: scale(1.03);
-          transform: scale(1.03);
+  transform: scale(1.03);
   background-color: #00335E;
 }
 
 .d-cardIcon {
   border-radius: 8px;
   border: 1px solid #00335E;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 80%;
   margin: 0 auto;
   overflow: hidden;
 }
-
 .d-cardIcon-img {
   width: 25%;
   background-color: #00335E;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 .d-cardIcon-content {
   width: 75%;
   padding: 1em;
@@ -357,13 +304,11 @@ ol {
   background-color: #fff;
   border: 1px solid #B1B3B3;
 }
-
 .d-table thead {
   color: #EA5932;
 }
-
 .d-table td, .d-table th {
-  padding: .7em;
+  padding: 0.7em;
 }
 
 .d-tableBorder th {
@@ -371,7 +316,6 @@ ol {
   background-color: #EFEFEF;
   padding: 0.5em 0.7em;
 }
-
 .d-tableBorder td {
   background-color: #fff;
   text-align: center;
@@ -390,8 +334,6 @@ ol {
 
 .btn-primary {
   color: #fff;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
   font-size: 28px;
   padding: 1.2rem 2.5rem;
@@ -400,29 +342,24 @@ ol {
   border-color: #00335E;
   border-radius: 8px;
 }
-
 .btn-primary:disabled, .btn-primary.disabled {
   color: #fff;
   background-color: #D7D8D8;
   border-color: #D7D8D8;
 }
-
 .btn-primary:hover, .btn-primary:active, .btn-primary.active {
   color: #fff;
   border-color: #00335E;
   background-color: #00284a;
 }
-
 .btn-primary:focus {
   color: #fff;
   border-color: #00335E;
   background-color: #00284a;
-  -webkit-box-shadow: 0 0 0 0.25rem rgba(0, 51, 94, 0.5);
-          box-shadow: 0 0 0 0.25rem rgba(0, 51, 94, 0.5);
+  box-shadow: 0 0 0 0.25rem rgba(0, 51, 94, 0.5);
 }
-
 .btn-primary .d-icon {
-  margin-left: .3em;
+  margin-left: 0.3em;
   margin-right: 0.3em;
   width: 40px;
   height: 40px;
@@ -434,39 +371,31 @@ ol {
   background-color: #fff;
   border: 2px solid #00335E;
 }
-
 .btn-primary.d-lineal .d-icon {
   width: 40px;
   height: 40px;
   stroke: #00335E;
 }
-
 .btn-primary.d-lineal:hover, .btn-primary.d-lineal:active, .btn-primary.d-lineal.active {
   color: #fff;
   stroke: #fff;
   border-color: #00335E;
   background-color: #00284a;
 }
-
 .btn-primary.d-lineal:hover .d-icon {
   stroke: #fff;
 }
-
 .btn-primary.d-lineal:focus {
   color: #fff;
   border-color: #00335E;
   background-color: #00284a;
-  -webkit-box-shadow: 0 0 0 0.25rem rgba(0, 51, 94, 0.5);
-          box-shadow: 0 0 0 0.25rem rgba(0, 51, 94, 0.5);
+  box-shadow: 0 0 0 0.25rem rgba(0, 51, 94, 0.5);
 }
-
 .btn-primary.d-lineal:disabled, .btn-primary.d-lineal.disabled {
   color: #fff;
   background-color: #D7D8D8;
   border-color: #D7D8D8;
 }
-
 .btn-primary.d-lineal:disabled .d-icon, .btn-primary.d-lineal.disabled .d-icon {
   stroke: #fff;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
