@@ -92,4 +92,39 @@
   width: 75%;
   padding: 1em;
   background-color: #fff;
+}
+
+.d-card-pago_contenedor {
+  height: 400px;
+  overflow-y: scroll;
+  padding: 0 20px 0 0;
+}
+
+.d-card-agencia {
+  padding: 28px 0;
+  display: flex;
+  align-items: stretch;
+  margin-bottom: 10px;
+  margin-left: 0;
+  margin-right: 4px;
+}
+.d-card-agencia_contenedor {
+  height: 620px;
+  overflow-y: scroll;
+  background-color: #e9ecef;
+  padding: 10px;
+  border: 1px solid #dee2e6;
+  border-radius: 15px;
+}
+.d-card-agencia .col-4 p {
+  line-height: 1.1;
+}
+.d-card-agencia .col-7 p {
+  padding: 0 20px;
+  border-left: 1px solid #dee2e6;
+  margin-left: 20px;
+  line-height: 1.1;
+  height: 100%;
+  display: flex;
+  align-items: center;
 }/*# sourceMappingURL=cards.css.map */
